@@ -1,0 +1,170 @@
+body {
+    overflow-y: scroll;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background: #fff;
+    color: #1c1e21;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.globalContainer {
+    margin: 0 auto;
+    position: relative;
+}
+
+.fb_content {
+    margin: 0;
+    outline: none;
+    padding: 0;
+    width: auto;
+    min-width: 640px;
+}
+
+.main_bar {
+    background-color: #f0f2f5;
+    min-width: 500px;
+    padding-top: 72px;
+    padding-bottom: 112px;
+}
+
+.desk {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px;
+}
+
+.textbook {
+    margin-right: 0;
+    padding-right: 32px;
+    width: 580px;
+}
+
+.facebook_img {
+    height: 106px;
+    margin: -28px;
+}
+
+.slogan {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px; 
+}
+
+.globalLogIn {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.outerLogIn {
+    height: 456px;
+    width: 396px;
+}
+
+.innerLogIn {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+
+.inputBar {
+    display: inline-block;
+    margin: auto;
+    padding: 6px 0;
+}
+
+.inputText {
+    float: left;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    height: 22px;
+    line-height: 16px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    border-radius: 8px;
+}
+
+.commonButton {
+    color: #fff;
+    cursor: pointer;
+    box-sizing: content-box;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#logInButton {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px; 
+    width: 332px;  
+}
+
+#newAccountButton {
+    font-family: Helvetica, Arial,sans-serif;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#forgotPassword {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.line {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.createPage {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1c1e21;
+    font-size: 14px;
+    font-weight: normal;
+    border-top: none;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.linkNewPage{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+span {
+    display: inline-block;
+    margin-right: 1em;
+}
+span:hover {
+    text-decoration: underline;
+}
