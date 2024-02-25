@@ -1,0 +1,24 @@
+/* Style for the product list */
+
+.listItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.listItems app-product-items {
+    width: 20%;
+    margin: 10px 5px;
+}
+
+.listItems::after {
+    content: "";
+    flex: auto;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

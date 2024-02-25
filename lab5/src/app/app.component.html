@@ -1,0 +1,14 @@
+<app-top-bar></app-top-bar>
+
+<div class="container" style="display: flex; flex-direction: column;">
+  <div style="text-align: center;">
+    <button *ngFor="let category of categories" (click)="selectCategory(category.id)"> {{category.name}} </button>
+  </div>
+  <app-product-list [categoryId]="selectedCategory"></app-product-list>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
