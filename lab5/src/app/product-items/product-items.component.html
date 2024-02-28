@@ -1,9 +1,10 @@
 <div class="items">
     <h3> 
-        <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]"> 
-            <img [src]="product.landingImage"> 
+        <a [title]="product.name + ' details'" [routerLink]="['/categories', categoryId, 'products', product.id]">
+            <img [src]="product.landingImage">
             {{ product.name }}
-        </a> 
+        </a>
+        
     </h3>
     <h3> Rating: {{ product.rating }}</h3>
     <p class="description" *ngIf="product.description"> Description: {{product.description}}</p>

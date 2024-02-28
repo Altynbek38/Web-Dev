@@ -1,10 +1,7 @@
 <app-top-bar></app-top-bar>
-
+<app-categories></app-categories>
 <div class="container" style="display: flex; flex-direction: column;">
-  <div style="text-align: center;">
-    <button *ngFor="let category of categories" (click)="selectCategory(category.id)"> {{category.name}} </button>
-  </div>
-  <app-product-list [categoryId]="selectedCategory"></app-product-list>
+  <router-outlet></router-outlet>
 </div>
 
 <!-- 

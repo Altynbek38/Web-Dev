@@ -7,13 +7,6 @@ import { categories } from './categories';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  categories = [...categories];
-
-  selectedCategory: number = 0;
-  selectCategory(categoryId: number) {
-    this.selectedCategory = categoryId;
-    console.log(categoryId);
-  } 
 
 }
 

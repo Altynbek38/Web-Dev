@@ -2,7 +2,7 @@
 
 <div class="listItems">
     <ng-container *ngFor="let product of products">
-        <app-product-items *ngIf="product.categoryId == categoryId" [product]="product" (remove)="removeProduct($event)">
+        <app-product-items *ngIf="product.categoryId == categoryIdFromRoute" [product]="product" [categoryId]="categoryIdFromRoute" (remove)="removeProduct($event)">
         </app-product-items>
     </ng-container>
 </div>

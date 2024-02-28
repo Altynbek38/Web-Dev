@@ -9,15 +9,19 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductItemsComponent } from './product-items/product-items.component';
+import { CategoriesComponent } from './categories/categories.component';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-    ])
+      {path: 'categories', component: CategoriesComponent},
+      {path: 'categories/:categoryId', component: ProductListComponent},
+      {path: 'categories/:categoryId/products/:productId', component: ProductDetailsComponent}
+    ]),
+
   ],
   declarations: [
     AppComponent,
@@ -25,7 +29,8 @@ import { ProductItemsComponent } from './product-items/product-items.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    ProductItemsComponent
+    ProductItemsComponent,
+    CategoriesComponent
   ],
   bootstrap: [
     AppComponent
