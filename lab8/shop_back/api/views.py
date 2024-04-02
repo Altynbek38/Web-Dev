@@ -8,7 +8,7 @@ from api.models import Product
 
 def category_list(request):
     categories = Category.objects.all()
-    categories_json = [categories.to_json() for category in categories] 
+    categories_json = [category.to_json() for category in categories] 
 
     return JsonResponse(categories_json, safe=False, status=200)
 
@@ -28,15 +28,14 @@ def category_products(request, id):
     except Category.DoesNotExist as e:
         return JsonResponse({'error': str(e)}, status=404)
     
-    category_id = category.to_json().id
-    products = Product.objects.get(category=category_id)
-    products_json = [products.to_json() for product in products]
+    products = Product.objects.filter(category=category)
+    products_json = [product.to_json() for product in products]
 
     return JsonResponse(products_json, safe=False, status=200)
 
 def product_list(request):
     products = Product.objects.all()
-    products_json = [products.to_json() for product in products]
+    products_json = [product.to_json() for product in products]
 
     return JsonResponse(products_json, safe=False,status=200)
 
