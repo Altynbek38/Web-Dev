@@ -1,0 +1,8 @@
+<div *ngIf="loaded">
+    <h2>Company detail #{{company.id}}</h2>
+    <h4>{{company.name}}</h4>
+    <p>{{company.description}}</p>
+    <p>{{company.city}}</p>
+    <p>{{company.address}}</p>
+    <a [routerLink]="['/companies', company.id, 'vacancies']">Company Vacancies</a>
+</div>

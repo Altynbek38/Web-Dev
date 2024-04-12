@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let company of companies">
+        <a [routerLink]="['/companies', company.id]">{{company.id}} - {{company.name}}</a>
+        <button (click)="deleteCompany(company.id)">Delete</button>
+    </li>
+</ul>
+
+<ng-template #loading>
+    <p>Companies are loading...</p>
+</ng-template>
